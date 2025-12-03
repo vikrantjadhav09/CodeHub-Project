@@ -1,0 +1,169 @@
+.ai-commit-helper {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ai-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.ai-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.generate-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.generate-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.generate-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    border-left: 4px solid #c62828;
+}
+
+.suggestions-container {
+    margin-top: 16px;
+}
+
+.suggestion-item {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.suggestion-item h4 {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.message-title {
+    background-color: #f0f4ff;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin: 8px 0;
+}
+
+.message-description {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.commit-type {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.type-badge {
+    background-color: #667eea;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 10px 0;
+}
+
+.tag {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    border: 1px solid #a5d6a7;
+}
+
+.use-suggestion-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.use-suggestion-btn:hover {
+    background-color: #45a049;
+}
+
+.selected-message {
+    background-color: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.selected-message p {
+    margin: 0;
+    color: #2e7d32;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .ai-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .generate-btn {
+        width: 100%;
+    }
+}

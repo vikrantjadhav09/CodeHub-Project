@@ -2,5 +2,6 @@
 
 .env
 
+AI_SETUP_GUIDE.md
 
 node_modules/
